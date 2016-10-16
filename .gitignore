@@ -50,7 +50,6 @@ lua-5.2.3/
 lua-5.1.5/
 luajit-2.0.4/
 luajit-2.0.3/
-include/
 liblua.a
 lib/liblua5.2.a
 

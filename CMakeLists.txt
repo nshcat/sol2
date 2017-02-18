@@ -12,7 +12,7 @@ project(sol2)
 add_library(sol2 INTERFACE)
 
 # Try to locate lua library
-find_package(Lua REQUIRED)
+find_package(Lua 5.3 REQUIRED)
 
 # Set dependencies as public
 target_include_directories(sol2 INTERFACE ${LUA_INCLUDE_DIR} ${CMAKE_CURRENT_LIST_DIR}/include)
@@ -20,3 +20,4 @@ target_link_libraries(sol2 INTERFACE ${LUA_LIBRARIES})
 
 # Set user variables
 set(LIBSOL2_LIBRARIES sol2 CACHE INTERNAL "")
+ 
